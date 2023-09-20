@@ -6,6 +6,7 @@ from aiogram import F
 # Local
 from settings import dp, bot
 import handlers as hs
+import constants as const
 
 
 dp.message.register(hs.hello, Command('start')) # register handlers

@@ -35,7 +35,9 @@ async def dialog(message: types.Message):
 
 async def help(message: types.Message):
     """Help function - must worked if state is not GPT."""
-    await message.answer('This is a help function.')
+    values = const.commands.values()
+    response = '\n\n'.join(values)
+    await message.answer(response)
 
 async def default(message: types.Message):
     """This function called help if not state."""
