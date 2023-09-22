@@ -4,8 +4,8 @@ from aiogram.filters.command import Command
 from aiogram import F
 
 # Local
-from settings import dp, bot
-import handlers as hs
+from src.settings import dp, bot
+import src.handlers as hs
 
 
 dp.message.register(hs.hello, Command('start')) # register handlers
