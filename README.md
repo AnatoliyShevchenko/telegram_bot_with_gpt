@@ -8,9 +8,14 @@
 - Поместить в .env файл:
     - Токен бота, назвать просто "TOKEN"
     - Токен GPT, назвать "API_TOKEN"
-- Выполнить команды:
+- Для установки пакетов выполнить команду:
     - pip install -r requirements.txt
+- Или если предпочитаете использовать Poetry:
+    - poetry install
+- Для запуска выполните команду:
     - python main.py, ну или python3 main.py 
+- Или для Poetry:
+    - poetry run python main.py
 
 Или смотрите пункты про .env файл и потом запустите контейнер через Docker
 
